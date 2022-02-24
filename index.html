@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloud Store</title>
+    <link rel="stylesheet" href="./css/css_library.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="display" class="dja" >
+      <div class="login_fild dja" >
+        <form class="contaner dja" id="post">
+          <p class="heading dja">Login</p>
+          <br><br>
+          <input
+            type="username"
+            spellcheck="false"
+            placeholder="Username"
+            name="username"
+            id="email"
+            required
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            id="password"
+            required
+          />
+          <div class="lodeX "></div>
+          <br>
+          <div name="submit" class="submit_btn dja">LOGIN</div>
+          <br>
+          <p class="next_page dja">
+            Don't Have an account?<a href="./html/create.html">create account</a>
+          </p>
+          <br>
+       </form>
+      </div>
+      <div id="home" class="dja">
+        <div id="uplode_file_button" class="h_btn dja bl bdr">
+          <p>Uplode</p>
+        </div>
+        <div id="open_cloud_button" class="h_btn dja bl bdr">
+          <p>Cloud Store</p>
+        </div>
+      </div>
+      <div id="select_type" class="g a j bdr">
+        <section><p class="file_type">Document</p></section>
+        <section><p class="file_type">Image</p></section>
+        <section><p class="file_type">Audio</p></section>
+        <section><p class="file_type">Video</p></section>
+      </div>
+      <div id="upload_files" class="dja">
+        <div class="input_fild bdr">
+          <input class="file_input" type="file" multiple/>
+          <p>Choose File</p>
+        </div>
+        <div class="input_fild bdr">
+          <input class="file_input" type="file" multiple/>
+          <p>Choose File</p>
+        </div>
+        <div class="input_fild bdr">
+          <input class="file_input" type="file" multiple/>
+          <p>Choose File</p>
+        </div>
+        <div class="input_fild bdr">
+          <input class="file_input" type="file" multiple/>
+          <p>Choose File</p>
+        </div>
+        <div id="choose_file_test"></div>
+        <div id="user_id" class="">
+          <input type="password" id="user_name" placeholder="Username" />
+          <div id="show_username"></div>
+        </div>
+        <div id="upload_btn" class="m_btn dja bdr">
+          <p>Upload</p>
+        </div>
+        <div id="close_btn" class="m_btn dja bdr">
+          <p>Close</p>
+        </div>
+        <div id="upload_complete_info" class="dja">
+          <span></span>
+          <x id="uploading_info">Uploading...</x>
+          <p id="upload_complete" class="">OK</p>
+        </div>
+      </div>
+    </div>    
+    <script src="./js/config.js"></script>
+    <script type="module" src="./js/log_uolode.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

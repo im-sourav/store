@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <link rel="stylesheet" href="../css/css_library.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      body{
+        position: relative;
+        width: 100vw;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body class="dja">
+    <div class="login_fild dja">
+      <form class="contaner dja" id="post">
+        <p class="heading dja">Sign Up</p>
+        <br />
+        <div class="out">
+          <input
+            type="text"
+            id="full_name"
+            spellcheck="false"
+            placeholder="Full Name"
+            name="full_name"
+            required
+          />
+        </div>
+        <div class="out">
+          <input
+            type="text" 
+            id="username"
+            spellcheck="false"
+            placeholder="Username"
+            name="username"
+            required
+          />
+        </div>
+        <div class="out">
+          <input
+            type="email"
+            id="email"
+            spellcheck="false"
+            placeholder="Email"
+            name="email"
+            required
+          />
+        </div>
+        <div class="out">
+          <input
+            type="password"
+            id="password"
+            placeholder="Create Password"
+            name="password"
+            required
+          />
+        </div>
+        <div class="out">
+          <input
+            type="password"
+            id="coPassword"
+            placeholder="Confirm Password"
+            name="copassword"
+            required
+          />
+        </div>
+        <div class="lodeX"></div>
+        <div id="radio_btn" class="dja">
+          <label for="male">
+            <div class="gender dja">
+              <input type="radio" value="male" name="gen" class="gn" required />
+              <p>Male</p>
+            </div>
+          </label>
+          <label for="female">
+            <div class="gender dja">
+              <input
+                type="radio"
+                value="female"
+                name="gen"
+                class="gn"
+                required
+              />
+              <p>Female</p>
+            </div>
+          </label>
+          <label for="other">
+            <div class="gender dja">
+              <input
+                type="radio"
+                value="other"
+                name="gen"
+                class="gn"
+                required
+              />
+              <p>Other</p>
+            </div>
+          </label>
+        </div>
+        <br />
+        <div class="submit_btn dja">Create Account</div>
+        <br />
+        <p class="next_page dja">
+          Have an account?<a href="../index.html">Login account</a>
+        </p>
+        <br />
+      </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="../js/config.js"></script>
+    <script type="module" src="../js/create.js"></script>
+  </body>
+</html>
